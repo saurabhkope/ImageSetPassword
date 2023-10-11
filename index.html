@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <title>Photo File Converter</title>
+    <title>Secure Image to PDF</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Photo File Converter</h1>
-        <input type="file" id="fileInput" accept="image/*">
-        <input type="password" id="passwordInput" placeholder="Enter Password">
-        <button id="convertBtn">Convert & Download</button>
-    </div>
-    <a id="downloadLink" style="display: none;" download="converted-photo.jpg">Download Converted Photo</a>
+    <header>
+        <h1>Secure Image to PDF Converter</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <input type="file" id="fileInput" accept="image/*">
+            <input type="text" id="passwordInput" placeholder="Enter password">
+            <button id="convertBtn">Convert to Secure PDF</button>
+            <a id="downloadLink" style="display: none" download="secure_image.pdf">Download Secure PDF</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Secure Image to PDF Converter</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.4.0/pdf-lib.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
